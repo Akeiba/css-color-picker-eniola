@@ -1,0 +1,109 @@
+
+
+body {
+    box-sizing: border-box;
+    background-color: #BEA0B0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+} 
+
+.background-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.eniola-image {
+    align-self: center; 
+    height: 320px; 
+    width:200px;
+    background-image: url(/assets/eniola-full.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: -1;
+    position: absolute;
+}
+
+.eniola-image .eniola-glasses {
+    mix-blend-mode: multiply;
+}
+
+
+.eniola-glasses {
+    z-index: 100;
+}
+
+.code-section {
+    margin: 20% 0 0 5%;
+    width: 30%;
+    color: #747575;
+    font-size: 12px;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+span {
+    padding: 0 0 0 16px ;
+}
+
+.input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #070909;
+    
+}
+
+.span {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+.get-color {
+    border: none;
+    background-color: #BEA0B0;
+    padding: 0 0 0 5px;
+    font-size: 12px;
+
+}
+
+.get-color:focus {
+    outline: none;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    right: 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.auto-items {
+    padding: 6px 0 0 0;
+    border-bottom: 1px solid rgba(197, 190, 194, 0.35);
+}
+
+.auto-items:hover {
+    background-color: rgba(197, 190, 194, 0.45);
+}
+
+
