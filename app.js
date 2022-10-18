@@ -1,6 +1,6 @@
 let getColor = document.querySelector("#get-color");
 let result = document.querySelector("#result");
-let glassesOverlay = document.querySelector(".eniola-glasses");
+let shirtOverlay = document.querySelector(".mabel-shirt");
 let chosenColor = "";
 let liItems = document.querySelectorAll("li");
 
@@ -184,12 +184,7 @@ getColor.addEventListener("keyup", (e) => {
   }
 
   if (e.code === "Enter") {
-    console.log(getColor.value);
-    console.log(e.button);
-
-    result.innerText = getColor.value;
-    chosenColor = getColor.value;
-    glassesOverlay.style.color = "blue";
+    shirtOverlay.style.fill = getColor.value;
     e.preventDefault();
   }
 });
@@ -207,7 +202,3 @@ const removeElements = () => {
     item.remove();
   });
 };
-
-// liItems.addEventListener("mouseup", (e) => {
-//   console.log("yes");
-// });
