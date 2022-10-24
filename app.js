@@ -191,6 +191,7 @@ getColor.addEventListener("keyup", (e) => {
 
 const displayColors = (value) => {
   getColor.value = value;
+  shirtOverlay.style.fill = value;
   removeElements();
 };
 
